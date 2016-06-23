@@ -20,7 +20,7 @@ int main() {
 //    intNodeTester();
 //    stringNodeTester();
 //    stdPairNodeTester();
-    myPairNodeTester();
+//    myPairNodeTester();
 
 //    intListTester();
 //    stringListTester();
@@ -141,10 +141,10 @@ void stringListTester() {
 
 void stdPairListTester() {
     DoublyLinkedList<std::pair<int, int>> pairList;
-    pairList.push(std::make_pair<int, int>(5, 2));
-    pairList.push(std::make_pair<int, int> (0, 1));
-    pairList.push(std::make_pair<int, int> (1, 0));
-    pairList.push(std::make_pair<int, int> (1, 1));
+    pairList.push(std::make_pair(5, 2));
+    pairList.push(std::make_pair(0, 1));
+    pairList.push(std::make_pair(1, 0));
+    pairList.push(std::make_pair(1, 1));
     std::cout << "pairList.size(): " << pairList.size() << std::endl;
     pairList.clear();
     std::cout << "pairList.size(): " << pairList.size() << std::endl;

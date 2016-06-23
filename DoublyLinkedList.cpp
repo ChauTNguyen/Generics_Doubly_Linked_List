@@ -7,16 +7,13 @@
 template <typename T>
 DoublyLinkedList<T>::DoublyLinkedList() {
     count = 0;
-    first = nullptr;
-    last = nullptr;
+    first = last = nullptr;
 }
 
 template <typename T>
 DoublyLinkedList<T>::~DoublyLinkedList() {
     clear();
-    delete first;
-    delete last;
-    first = last = nullptr;
+    delete first, last;
 }
 
 template <typename T>
