@@ -28,7 +28,7 @@ public:
     void setPrev(Node<T> *newPrev) { prev = newPrev; }
     void setNext(Node<T> *newNext) { next = newNext; }
 
-    void printData() const { std::cout << value << std::endl; } // works only for primitive data types
+    void printData() const { std::cout << value << std::endl; }
     bool hasPrev() const { return (prev != nullptr); }
     bool hasNext() const { return (next != nullptr); }
 };

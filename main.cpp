@@ -20,12 +20,12 @@ int main() {
 //    intNodeTester();
 //    stringNodeTester();
 //    stdPairNodeTester();
-//    myPairNodeTester();
+    myPairNodeTester();
 
 //    intListTester();
 //    stringListTester();
 //    stdPairListTester();
-    myPairListTester();
+//    myPairListTester();
 
     std::cout << "All done." << std::endl;
     return 0;
@@ -74,6 +74,7 @@ void myPairNodeTester() {
     std::cout << pairNode->getData() << std::endl;
     Pair<int, int> pair1 = pairNode->getData();
     std::cout << pair1 << std::endl;
+    pairNode->printData();
 }
 
 void intListTester() {

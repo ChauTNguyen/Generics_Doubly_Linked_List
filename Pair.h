@@ -9,7 +9,7 @@
 
 template <typename T1, typename T2>
 class Pair {
-    template<typename T3, typename T4>
+    template <typename T3, typename T4>
     friend std::ostream& operator<<(std::ostream& out, const Pair<T3, T4>& pair);
 public:
     T1 first;
