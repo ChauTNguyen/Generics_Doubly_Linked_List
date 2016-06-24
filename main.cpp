@@ -25,7 +25,7 @@ int main() {
 //    intListTester();
 //    stringListTester();
 //    stdPairListTester();
-//    myPairListTester();
+    myPairListTester();
 
     std::cout << "All done." << std::endl;
     return 0;
@@ -159,6 +159,9 @@ void myPairListTester() {
     pairList.push(Pair<int, int>(3, 4));
     pairList.push(Pair<int, int>(1, 1));
     pairList.push(Pair<int, int>(2, 5));
+    pairList.printForward();
+    pairList.printReverse();
+    pairList.push(make_pair(5, 2));
     pairList.printForward();
     pairList.printReverse();
 }

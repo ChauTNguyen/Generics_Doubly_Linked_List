@@ -77,7 +77,7 @@ void DoublyLinkedList<T>::pop() {
             delete tmp;
             tmp = nullptr;
         } else {
-            // If (count == 1), first must become nullptr as well because the list will have 0 elements.
+            // If (count == 1), first and last must be set to nullptr.
             Node<T> *tmp = last;
             first = last = nullptr;
             delete tmp;
